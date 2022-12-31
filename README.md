@@ -19,8 +19,6 @@ import {getSymbol} from languagejs
 const symbol = getSymbol('English')
 ```
 
-Enjoy!
-
 
 ### Examples
 
@@ -75,3 +73,7 @@ import {isRTL} from languagejs
 
 const isRTL = isRTL('es')
 ```
+
+### Note
+
+I uploaded this package because I needed it while working on my own projects. Feel free to provide feedback, suggest new features, or contribute to the project. I hope you find it helpful.
