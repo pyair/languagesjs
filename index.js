@@ -37,10 +37,13 @@ const getNativeName = (symbolOrEnglishName) => {
 }
 
 const isRTL = (code) => {
+    if (!code in symbolToEnglishName) {
+        throw new Error(`Symbol ${code} is not exist or supported`)
+    }
     if (!code in symbolToRtlWriting) {
         return symbolToRtlWriting[code]
     }
-    throw new Error(`Symbol ${code} is not exist or supported`)
+    return false
 }
 
 export { isRTL, getEnglishName, getSymbol, getNativeName }
